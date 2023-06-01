@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable,EventEmitter} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {SignUp} from '../data-type';
+import {SignUp,Login} from '../data-type';
 import {BehaviorSubject} from 'rxjs';
 import {Router} from '@angular/router';
 
@@ -9,8 +9,10 @@ import {Router} from '@angular/router';
 })
 export class SellerService {
   isSellerLoggedIn =new BehaviorSubject<boolean>(false);
+  isLoginError= new EventEmitter<boolean>(false);
 
   constructor(private http: HttpClient,private router: Router) { }
+
   userSignUp(data: SignUp){
     return this.http.post("http://localhost:3000/seller",data,{observe :'response'}).subscribe(
       (result)=>{
@@ -18,8 +20,32 @@ export class SellerService {
         localStorage.setItem('seller',JSON.stringify(result.body));
         this.router.navigate(['seller-home']);  
         console.log("seller-service "+ result);
-      }     
-    )
-   
+      }) 
+  }
+
+  reloadSeller(){
+    if(localStorage.getItem('seller'))
+    {
+      this.isSellerLoggedIn.next(true);
+      this.router.navigate(['seller-home']);  
+    }
+  }
+
+  userLogin(data: Login):void{
+    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{observe :'response'})
+      .subscribe(
+      (result:any)=>{
+        if(result && result.body && result.body.length){
+          localStorage.setItem('seller',JSON.stringify(result.body));
+        this.router.navigate(['seller-home']);  
+          console.warn(result.body);
+        }
+        else{
+          console.warn("Incorrect Login Credientials");
+          this.isLoginError.emit(true);
+        }
+    })
+  
   }
 }
+  
