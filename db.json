@@ -1,0 +1,88 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "name",
+      "email": "email",
+      "password": "pass"
+    },
+    {
+      "name": "sandeep",
+      "email": "sandeep@mail.com",
+      "passeword": "password",
+      "id": 2
+    },
+    {
+      "name": "rahul",
+      "email": "rahul@mail.com",
+      "passeword": "password",
+      "id": 3
+    },
+    {
+      "name": "sagar",
+      "email": "sagar@mail.com",
+      "passeword": "password",
+      "id": 4
+    },
+    {
+      "name": "asd",
+      "email": "sadsad",
+      "password": "asd",
+      "id": 5
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@mail",
+      "password": "bruce",
+      "id": 6
+    },
+    {
+      "name": "sadxasc",
+      "email": "asxasx",
+      "password": "asxssazx",
+      "id": 7
+    },
+    {
+      "name": "asdas",
+      "email": "dasdsa",
+      "password": "asd",
+      "id": 8
+    },
+    {
+      "name": "sdas",
+      "email": "dasdas",
+      "password": "dasda",
+      "id": 9
+    },
+    {
+      "name": "dsads",
+      "email": "dsadsa",
+      "password": "dsada",
+      "id": 10
+    },
+    {
+      "name": "sasdasd",
+      "email": "dasd",
+      "password": "asdasd",
+      "id": 11
+    },
+    {
+      "name": "asd",
+      "email": "asdas",
+      "password": "dasdasd",
+      "id": 12
+    },
+    {
+      "name": "er",
+      "email": "ewr",
+      "password": "wrerw",
+      "id": 13
+    },
+    {
+      "name": "dfsdf",
+      "email": "dsfdsf",
+      "password": "sdfsdf",
+      "id": 14
+    }
+  ]
+}
