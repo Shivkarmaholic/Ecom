@@ -1,4 +1,51 @@
 {
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Note 10",
+      "color": "Black",
+      "category": "Mobiles",
+      "description": "Its a  Good Mobile",
+      "imageUrl": "image.url",
+      "price": "19999"
+    },
+    {
+      "name": "dsf",
+      "color": "sdfds",
+      "category": "fdsf",
+      "description": "dsfsdf",
+      "imageUrl": "dsf",
+      "price": "dsfsdf",
+      "id": 2
+    },
+    {
+      "name": "fdgfdg",
+      "color": "fdg",
+      "category": "fdg",
+      "description": "dfg",
+      "imageUrl": "fdgdf",
+      "price": "gfdgd",
+      "id": 3
+    },
+    {
+      "name": "fdgfdg",
+      "color": "fdg",
+      "category": "fdg",
+      "description": "dfg",
+      "imageUrl": "fdgdf",
+      "price": "gfdgd",
+      "id": 4
+    },
+    {
+      "name": "dsf",
+      "color": "dsfsdf",
+      "category": "sdf",
+      "description": "sdfsd",
+      "imageUrl": "dsfsdf",
+      "price": "sdfdsf",
+      "id": 5
+    }
+  ],
   "seller": [
     {
       "id": 1,

@@ -1,0 +1,36 @@
+<div class="commonTable">
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Image URL</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.color }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.imageUrl }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                    <button class="action-button delete-button" (click)="deleteProduct(product.id)">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <button class="action-button edit-button" (click)="editProduct(product.id)">
+                        <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

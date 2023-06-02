@@ -1,0 +1,10 @@
+.add-product .SuccessFullMsg {
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.add-product h1 {
+    text-align: center;
+}

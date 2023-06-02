@@ -9,6 +9,16 @@ body {
     margin-right: 5px;
 }
 
+.FormPage {
+    margin-top: 30px;
+}
+
+.commonTable {
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+}
+
 .common-form {
     display: flex;
     text-align: center;

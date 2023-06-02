@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  menuType:String='default';
+  menuType:string='default';
+  sellerName:string='';
   constructor(private route:Router)
   {
 
@@ -27,6 +28,12 @@ export class HeaderComponent implements OnInit {
           {
             console.warn("In Seller Area");
             this.menuType='seller';
+            if(localStorage.getItem('seller')){
+              let sellerStore = localStorage.getItem('seller');
+              let sellerData = sellerStore && JSON.parse(sellerStore)[0];             
+              this.sellerName =sellerData.name;
+            }
+
           }
           else{
             console.warn("OutSide Seller");

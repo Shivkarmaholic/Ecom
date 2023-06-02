@@ -6,10 +6,11 @@
     </div>
     <div [ngSwitch]="menuType">
         <ul *ngSwitchCase="'seller'">
-            <li><a routerLink="./">Products</a></li>
-            <li><a routerLink="./">AddProduct</a></li>
-            <li> <a href="#">LogOut</a> </li>
-            <li> <a href="#">Seller Name</a> </li>
+            <li><a routerLink="seller-home">DashBoard</a></li>
+            <li><a routerLink="seller-product-list">Products</a></li>
+            <li><a routerLink="seller-add-product">AddProduct</a></li>
+            <li> <a style="cursor: pointer;" (click)="logOut()">LogOut</a> </li>
+            <li> <a (click)="logOut()">{{this.sellerName | titlecase}}</a> </li>
         </ul>
 
         <ul *ngSwitchDefault>
