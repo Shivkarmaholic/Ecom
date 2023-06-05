@@ -6,13 +6,20 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerProductListComponent } from './seller-product-list/seller-product-list.component';
 import { AuthGuard } from './auth.guard'
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'seller-auth', component: SellerAuthComponent },
-  { path: 'seller-home', component: SellerHomeComponent, canActivate:[AuthGuard]},
-  { path: 'seller-product-list', component: SellerProductListComponent, canActivate:[AuthGuard]},
-  { path: 'seller-add-product', component: SellerAddProductComponent, canActivate:[AuthGuard]}
+  { path: 'seller-home', component: SellerHomeComponent, canActivate: [AuthGuard] },
+  { path: 'seller-product-list', component: SellerProductListComponent, canActivate: [AuthGuard] },
+  { path: 'seller-add-product', component: SellerAddProductComponent, canActivate: [AuthGuard] },
+  { path: 'seller-update-product/:id', component: SellerUpdateProductComponent, canActivate: [AuthGuard] },
+  { path: 'search/:query', component: SearchComponent },
+  { path: 'details/:productId', component: ProductDetailsComponent },
+
 
 
 ];

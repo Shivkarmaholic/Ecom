@@ -6,7 +6,7 @@
 .nav h1 {
     color: #fd6900;
     margin: 0px;
-    font-size: 24px;
+    font-size: 38px;
     padding-top: 8px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .nav .nav-search {
-    margin-top: 5px;
+    margin-top: 10px;
     flex: 1px;
     display: flex;
     margin-right: 5%;
@@ -39,7 +39,7 @@
     FLEX: 1;
     color: blueviolet;
     border: 1px solid blueviolet;
-    height: 35px;
+    height: 38px;
     border-right: none;
 }
 
@@ -47,10 +47,31 @@
 
     color: blueviolet;
     border: 1px solid blueviolet;
-    height: 39px;
+    height: 38px;
     border-left: none;
 }
 
 h1 .header-title {
     text-decoration: none;
+}
+
+
+.search-suggestion-list {
+    position: absolute;
+    top: 47px;
+    z-index: 10;
+    display: list-item !important;
+    border: 1px solid blueviolet;
+    background-color: white;
+    width: 300px;
+}
+
+.search-suggestion-list li {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-suggestion-list li a {
+    cursor: pointer;
+    color: blueviolet;
 }

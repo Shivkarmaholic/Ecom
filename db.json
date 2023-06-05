@@ -1,49 +1,31 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Samsung Note 10",
-      "color": "Black",
-      "category": "Mobiles",
-      "description": "Its a  Good Mobile",
-      "imageUrl": "image.url",
-      "price": "19999"
-    },
-    {
-      "name": "dsf",
-      "color": "sdfds",
-      "category": "fdsf",
-      "description": "dsfsdf",
-      "imageUrl": "dsf",
-      "price": "dsfsdf",
-      "id": 2
-    },
-    {
-      "name": "fdgfdg",
-      "color": "fdg",
-      "category": "fdg",
-      "description": "dfg",
-      "imageUrl": "fdgdf",
-      "price": "gfdgd",
-      "id": 3
-    },
-    {
-      "name": "fdgfdg",
-      "color": "fdg",
-      "category": "fdg",
-      "description": "dfg",
-      "imageUrl": "fdgdf",
-      "price": "gfdgd",
-      "id": 4
-    },
-    {
-      "name": "dsf",
-      "color": "dsfsdf",
-      "category": "sdf",
-      "description": "sdfsd",
-      "imageUrl": "dsfsdf",
-      "price": "sdfdsf",
+      "name": "updateed product",
+      "color": "whit",
+      "category": "dairy",
+      "description": "dairy management softwarer",
+      "imageUrl": "https://1.bp.blogspot.com/-g2u1OIgqZ4Y/X-4Yt-XLBBI/AAAAAAAACAw/QZZ0O9AX7REZ7qWj2p4HP4pnBUNtKDZZwCLcBGAsYHQ/s935/nifty%2Bstl.JPG",
+      "price": "ds",
       "id": 5
+    },
+    {
+      "name": "product name 1 ",
+      "color": "red",
+      "category": "machinery",
+      "description": "big jcb spare parts",
+      "imageUrl": "https://beautyinsider.sg/wp-content/uploads/2015/12/1-1024x576.jpg",
+      "price": "89500",
+      "id": 7
+    },
+    {
+      "name": "Lg X220",
+      "color": "Black",
+      "category": "Mid-range smartphone",
+      "description": "Key Features\n- 18:9 QHD+ OLED FullVision™",
+      "imageUrl": "https://5.imimg.com/data5/IO/QJ/MY-24529291/lg-mobiles-500x500.png",
+      "price": "29999",
+      "id": 8
     }
   ],
   "seller": [

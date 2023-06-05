@@ -1,4 +1,55 @@
-<div class="commonTable">
+<div class="product-list">
+    <h1>Product List</h1>
+    <p class="SuccessFullMsg">{{productMessage}}</p>
+    <table>
+        <thead>
+            <tr>
+                <td>Image</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Color</td>
+                <td>Category</td>
+                <td>Description</td>
+                <td>Actions</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productList">
+                <td><img src="{{item.imageUrl}}" alt="" /></td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.color}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.description}}</td>
+                <td>
+                    <fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
+
+                    <a routerLink="/seller-update-product/{{item.id}}">
+                        <fa-icon class="update-icon" [icon]="iconEdit"></fa-icon></a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="commonTable">
     <table class="product-table">
         <thead>
             <tr>
@@ -33,4 +84,4 @@
         </tbody>
     </table>
 
-</div>
+</div> -->

@@ -41,3 +41,18 @@ body {
     color: blueviolet;
 
 }
+
+.carousel-caption {
+    background-color: #8a22e59d;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    margin: auto;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+}
