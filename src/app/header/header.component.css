@@ -25,6 +25,7 @@
 .nav li a {
     text-decoration: none;
     color: #fd6900;
+    cursor: pointer;
 }
 
 .nav .nav-search {
