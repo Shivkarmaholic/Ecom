@@ -6,7 +6,7 @@
         <button (click)="submitSearch(searchInput.value)">Search</button>
         <ul class="search-suggestion-list" *ngIf="searchResult">
             <li *ngFor="let item of searchResult">
-                <a [routerLink]="['/routePath']">{{item.name}}</a>
+                <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
             </li>
         </ul>
     </div>
@@ -18,11 +18,18 @@
             <li> <a style="cursor: pointer;" (click)="logOut()">LogOut</a> </li>
             <li> <a routerLink="/">{{this.sellerName | titlecase}}</a> </li>
         </ul>
+        <ul *ngSwitchCase="'user'">
+            <li> <a routerLink="seller-auth">Seller</a> </li>
+            <li><a routerLink="">Home</a></li>
+            <li> <a href="#">{{userName}}</a> </li>
+            <li> <a (click)="userLogOut()">Log-Out</a> </li>
+            <li> <a href="#">Cart(0)</a> </li>
+        </ul>
 
         <ul *ngSwitchDefault>
-            <li><a routerLink="./">Home</a></li>
-            <li> <a routerLink="./seller-auth">Seller</a> </li>
-            <li> <a href="#">Login</a> </li>
+            <li><a routerLink="">Home</a></li>
+            <li> <a routerLink="seller-auth">Seller</a> </li>
+            <li> <a [routerLink]="['user-auth']">Login/Sign-Up</a> </li>
             <li> <a href="#">Cart(0)</a> </li>
         </ul>
     </div>

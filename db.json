@@ -37,6 +37,26 @@
       "id": 9
     }
   ],
+  "users": [
+    {
+      "id": 1,
+      "name": "name",
+      "email": "email",
+      "password": "pass"
+    },
+    {
+      "id": 2,
+      "name": "sachin",
+      "email": "sachin",
+      "password": "sachin"
+    },
+    {
+      "id": 3,
+      "name": "test",
+      "email": "test",
+      "password": "test"
+    }
+  ],
   "seller": [
     {
       "id": 1,
@@ -138,6 +158,36 @@
       "email": "pratik@mail.com",
       "password": "abc@1234",
       "id": 17
+    },
+    {
+      "name": "asd",
+      "Email": "asd",
+      "Password": "asd",
+      "id": 18
+    },
+    {
+      "name": "adsf",
+      "Email": "sdf",
+      "Password": "dsf",
+      "id": 19
+    },
+    {
+      "name": "dfs",
+      "Email": "sdf",
+      "Password": "sdf",
+      "id": 20
+    },
+    {
+      "name": "sachin",
+      "Email": "sachin",
+      "Password": "sachin",
+      "id": 21
+    },
+    {
+      "name": "sachin",
+      "email": "sachin",
+      "password": "sachin",
+      "id": 22
     }
   ]
 }
