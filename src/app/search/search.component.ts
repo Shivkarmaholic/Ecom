@@ -15,14 +15,21 @@ export class SearchComponent implements OnInit {
 
   }
 
+
   ngOnInit(): void {
-    let query = this.activeRoute.snapshot.paramMap.get('query');
-    query && this.product.searchProduct(query).subscribe(
+    this.activeRoute.paramMap.subscribe(paramMap => {
+      const query = paramMap.get('query');
+      query && this.searchQuery(query);
+    });
+  }
+
+  searchQuery(query: string): void {
+    this.product.searchProduct(query).subscribe(
       (data: any) => {
         this.searchResult = data;
       }
-    )
+    );
   }
-
-
+  
 }
+
